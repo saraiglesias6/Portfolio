@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'DM Sans';
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(pink, #F9B233);
+    color: #333;
+}
+
+#botones {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#botones a {
+    border: 1px dashed #333;
+    text-align: center;
+    font-family: 'DM Sans';
+    border-color: #333;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 6px 20px;
+}
+
+#si {
+    width: 7%;
+    background-color: #333;
+    color: white;
+}
+
+#portfolio-digital {
+    background: none;
+    width: 45%;
+}
+
+#recopilacion {
+    background: none;
+    width: 45%;
+}
+
+header {
+    text-align: center;
+    padding: 0 20px 50px 20px;
+    color: #333;
+}
+
+header h1 {
+    font-size: 90px;
+    margin-top: 110px;
+    margin-bottom: 0px;
+}
+
+header p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+header a {
+    font-family: 'DM Sans';
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.857);
+    width: 180px;
+    height: 22px;
+    display: block;
+    margin: 10px auto;
+    text-decoration: none;
+}
+
+#portfolio-online a {
+    border: 1px solid #333;
+    cursor: pointer;
+    margin-bottom: 100px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition: all 0.5s;
+}
+
+#portfolio-online a:hover {
+    background-color: #F9B233;
+    transform: scale(1.15);
+}
+
+.animation-space {
+    width: 1000px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px dashed white;
+    margin: 70px auto 0 auto;
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header h1, header p, #portfolio-online button {
+    animation-name: disuelve;
+    animation-duration: 2s;
+}
+
+@keyframes disuelve {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#animacion {
+    width: 1000px;
+    height: 150px;
+    background-image: url(../imagenes/animacion.png);
+    background-size: 1000px 4500px;
+    animation-name: dibujos;
+    animation-duration: 7s;
+    animation-timing-function: steps(30);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: 0 auto;
+}
+
+@keyframes dibujos {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: 0px 4500px;
+    }
+}
+
+#portfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.foto {
+    margin: 0;
+    flex: 1 1 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.foto img:hover {
+    transform: scale(1.07);
+}
+
+#video {
+    width: 80%;
+    margin:10px auto;
+    }
+    
+video { 
+    width: 100%;
+    }
+
+#final {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
